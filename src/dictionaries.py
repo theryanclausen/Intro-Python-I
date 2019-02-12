@@ -20,12 +20,12 @@ waypoints = [
         "lat": 43,
         "lon": -121,
         "name": "a place"
-    }, 
+    },
     {
         "lat": 41,
         "lon": -123,
         "name": "another place"
-    }, 
+    },
     {
         "lat": 43,
         "lon": -122,
@@ -35,7 +35,14 @@ waypoints = [
 
 # Add a new waypoint to the list
 # YOUR CODE HERE
-
+point = {
+    "lat": 46,
+    "lon": -123,
+    "name": "a fourth place"
+}
+waypoints=[*waypoints, point]
+#waypoints.extend(point)
+print(waypoints)
 # Modify the dictionary with name "a place" such that its longitude
 # value is -130 and change its name to "not a real place"
 # YOUR CODE HERE
